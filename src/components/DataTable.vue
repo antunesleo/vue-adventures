@@ -65,6 +65,29 @@ export default {
       this.users = response.data;
     }).catch(e => {
       console.log('passei', e);
+      this.users = [
+        {
+          "id": 1,
+          "name": "Leonardo",
+          "lastName": "Coelho",
+          "username": "antunesleo",
+          "age": 22
+        },
+        {
+          "id": 2,
+          "name": "Breno",
+          "lastName": "Brenalves",
+          "username": "breno",
+          "age": 26
+        },
+        {
+          "id": 3,
+          "name": "Edmar",
+          "lastName": "Coelho",
+          "username": "edmar.coelho",
+          "age": 53
+        }
+      ];
     });
     console.log('linha depois da request')
   },
